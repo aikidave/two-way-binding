@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "two-way-binding"
+    }
+  },
+  "defaultProject": "two-way-binding",
+  "cli": {
+    "analytics": false
+  }
 }
