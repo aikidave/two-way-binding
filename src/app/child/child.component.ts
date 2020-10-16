@@ -8,7 +8,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   @Input() value = 0;
-  @Output() incrementValue = new EventEmitter<number>();
+  @Output() valueChange = new EventEmitter<number>();
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class ChildComponent implements OnInit {
 
   increase(): void {
     this.value++;
-    this.incrementValue.emit(this.value);
+    this.valueChange.emit(this.value);
   }
 
 }

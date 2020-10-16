@@ -9,7 +9,8 @@ export class ParentComponent implements OnInit {
 
   counterValue = 0;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
